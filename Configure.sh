@@ -8,6 +8,8 @@ do
 
     if docker volume ls | grep -q "$name"; then
         echo "Volume $name already exists."
+        docker volume rm "$name"
+        docker volume create "$name"
     else
         echo "Volume $name does not exist. Creating..."
         docker volume create "$name"
@@ -15,7 +17,7 @@ do
 done
 
 #Volume
-Image_Name=("aryandvn24/aryan-nexus" "aryandvn24/jenkinsmod" "sonarqube" "aryandvn24/aryan-pdb" "mysql:5.7" "phpmyadmin/phpmyadmin" "tomcat")
+Image_Name=("aryandvn24/aryan-nexus" "aryandvn24/aryan-jenkins" "sonarqube" "aryandvn24/aryan-pdb" "mysql:5.7" "phpmyadmin/phpmyadmin" "tomcat")
 
 # Iterate through the array and print each name
 for name in ${Image_Name[@]}
@@ -24,6 +26,8 @@ do
 
     if docker images | grep -q "$name"; then
         echo "Docker Image $name already exists."
+        docker rmi "$name"
+        docker pull "$name"
     else
         echo "Docker Image $name does not exist. Creating..."
         docker pull "$name"
