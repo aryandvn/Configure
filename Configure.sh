@@ -17,7 +17,7 @@ do
 done
 
 #Volume
-Image_Name=("aryandvn24/aryan-nexus" "aryandvn24/aryan-jenkins" "sonarqube" "aryandvn24/aryan-pdb" "mysql:5.7" "phpmyadmin/phpmyadmin" "tomcat")
+Image_Name=("aryandvn24/aryan-nexus" "aryandvn24/aryan-jenkins" "sonarqube" "aryandvn24/aryan-pdb" "aryandvn24/aryan-mysql" "phpmyadmin/phpmyadmin" "tomcat")
 
 # Iterate through the array and print each name
 for name in ${Image_Name[@]}
