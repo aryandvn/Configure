@@ -1,5 +1,5 @@
 #Volume
-Volume_Name=("db_vol" "Nexus" "Jenkins" "sonarqube_database_data" "sonarqube_bundled-plugins" "sonarqube_conf" "sonarqube_data" "sonarqube_database" "sonarqube_extensions")
+Volume_Name=("db_vol" "Nexus" "Jenkins")
 
 # Iterate through the array and print each name
 for name in ${Volume_Name[@]}
@@ -8,8 +8,8 @@ do
 
     if docker volume ls | grep -q "$name"; then
         echo "Volume $name already exists."
- 
-        #docker volume create "$name"
+ 	docker volume rm $name
+        docker volume create "$name"
     else
         echo "Volume $name does not exist. Creating..."
         docker volume create "$name"
