@@ -34,9 +34,8 @@ do
     fi
 done
 
-#Start docker compose up
-docker compose up -d
-#To show all the pulled images
-docker images
-#To show all the pulled containers
-docker ps
+#Moving to root directory
+cd /
+
+#Cloning Project Repository
+git clone https://github.com/aryandvn/BackUp.git 
