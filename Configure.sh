@@ -8,7 +8,9 @@ do
 
     if docker volume ls | grep -q "$name"; then
         echo "Volume $name already exists."
+	echo "Removing old Volumes"
  	docker volume rm $name
+	echo "Creating new Volumes"
         docker volume create "$name"
     else
         echo "Volume $name does not exist. Creating..."
