@@ -1,4 +1,9 @@
-#Volume
+echo ""
+echo "##########################################"
+echo "            Creating Volumes              "
+echo "##########################################"
+echo ""
+
 Volume_Name=("db_vol" "Nexus" "Jenkins")
 
 # Iterate through the array and print each name
@@ -18,7 +23,12 @@ do
     fi
 done
 
-#Volume
+echo ""
+echo "##########################################"
+echo "            Pulling New Images            "
+echo "##########################################"
+echo ""
+
 Image_Name=("aryandvn24/aryan-nexus" "aryandvn24/aryan-jenkins" "sonarqube" "postgres" "aryandvn24/aryan-mysql" "phpmyadmin/phpmyadmin" "tomcat")
 
 # Iterate through the array and print each name
@@ -63,7 +73,7 @@ cd BackUp/
 
 echo ""
 echo "##########################################"
-echo "            Running Services              "
+echo "         Running Docker Services          "
 echo "##########################################"
 echo ""
 
@@ -76,6 +86,12 @@ docker images
 #Showing all the Services up and running
 docker ps
 
+echo ""
+echo "##########################################"
+echo "       Running Kubernetes Services        "
+echo "##########################################"
+echo ""
 
+minikube start
 
 
