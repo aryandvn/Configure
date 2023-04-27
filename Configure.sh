@@ -37,9 +37,11 @@ do
     fi
 done
 
+echo ""
 echo "##########################################"
-echo "            Cleaning System               "
+echo "              Cleaning System             "
 echo "##########################################"
+echo ""
 
 #Cleaning the Docker System
 docker system prune -f
@@ -47,11 +49,23 @@ docker system prune -f
 #Moving to root directory
 cd /home/weblogic/
 
+echo ""
+echo "##########################################"
+echo "              Cloning Repo                "
+echo "##########################################"
+echo ""
+
 #Cloning Git Repository
 git clone https://github.com/aryandvn/BackUp.git
 
 #Moving to the backup Directory
 cd BackUp/
+
+echo ""
+echo "##########################################"
+echo "            Running Services              "
+echo "##########################################"
+echo ""
 
 #Running all the services.
 docker compose up -d
