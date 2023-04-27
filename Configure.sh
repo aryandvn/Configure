@@ -37,6 +37,10 @@ do
     fi
 done
 
+echo "##########################################"
+echo "            Cleaning System               "
+echo "##########################################"
+
 #Cleaning the Docker System
 docker system prune -f
 
