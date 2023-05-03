@@ -1,6 +1,10 @@
 echo ""
 echo "##########################################"
-echo "            Creating Volumes              "
+echo "#                                        #"
+echo "#                                        #"
+echo "#            Creating Volumes            #"
+echo "#                                        #"
+echo "#                                        #"
 echo "##########################################"
 echo ""
 
@@ -25,7 +29,11 @@ done
 
 echo ""
 echo "##########################################"
-echo "            Pulling New Images            "
+echo "#                                        #"
+echo "#                                        #"
+echo "#           Pulling New Images           #"
+echo "#                                        #"
+echo "#                                        #"
 echo "##########################################"
 echo ""
 
@@ -49,7 +57,11 @@ done
 
 echo ""
 echo "##########################################"
-echo "              Cleaning System             "
+echo "#                                        #"
+echo "#                                        #"
+echo "#             Cleaning System            #"
+echo "#                                        #"
+echo "#                                        #"
 echo "##########################################"
 echo ""
 
@@ -61,7 +73,11 @@ cd /home/weblogic/
 
 echo ""
 echo "##########################################"
-echo "              Cloning Repo                "
+echo "#                                        #"
+echo "#                                        #"
+echo "#             Cloning Repo               #"
+echo "#                                        #"
+echo "#                                        #"
 echo "##########################################"
 echo ""
 
@@ -73,7 +89,11 @@ cd BackUp/
 
 echo ""
 echo "##########################################"
-echo "         Running Docker Services          "
+echo "#                                        #"
+echo "#                                        #"
+echo "#        Running Docker Services         #"
+echo "#                                        #"
+echo "#                                        #"
 echo "##########################################"
 echo ""
 
@@ -88,7 +108,11 @@ docker ps
 
 echo ""
 echo "##########################################"
-echo "       Running Kubernetes Services        "
+echo "#                                        #"
+echo "#                                        #"
+echo "#      Running Kubernetes Services       #"
+echo "#                                        #"
+echo "#                                        #"
 echo "##########################################"
 echo ""
 
