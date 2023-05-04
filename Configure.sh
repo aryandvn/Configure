@@ -100,11 +100,6 @@ echo ""
 #Running all the services.
 docker compose up -d
 
-#Showing all the images
-docker images
-
-#Showing all the Services up and running
-docker ps
 
 echo ""
 echo "##########################################"
@@ -117,5 +112,11 @@ echo "##########################################"
 echo ""
 
 minikube start
+
+#Showing all the images
+docker images
+
+#Showing all the Services up and running
+docker ps
 
 
