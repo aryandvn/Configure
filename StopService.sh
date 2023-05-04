@@ -4,7 +4,11 @@ cd /home/weblogic/BackUp/
 
 echo ""
 echo "##########################################"
-echo "        Stopping Docker Services          "
+echo "#                                        #"
+echo "#                                        #"
+echo "#       Stopping Docker Services         #"
+echo "#                                        #"
+echo "#                                        #"
 echo "##########################################"
 echo ""
 
@@ -16,7 +20,11 @@ rm -rf /home/weblogic/BackUp/
 
 echo ""
 echo "##########################################"
-echo "      Stopping Kubernetes Services        "
+echo "#                                        #"
+echo "#                                        #"
+echo "#     Stopping Kubernetes Services       #"
+echo "#                                        #"
+echo "#                                        #"
 echo "##########################################"
 echo ""
 
